@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  ;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #E7E7E7;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* NAV BAR STYLES */
+
+.wrapper {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 20px;
+  padding-bottom: 8px;
+}
+
+.wrapper-transparent {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 20px;
+}
+
+.nav-link-list {
+  @apply flex gap-3 h-full items-center;
+}
+
+.nav-link-list:hover a {
+  color: #CCC
+}
+
+.nav-link {
+  @apply flex items-center justify-center h-full px-4 text-black;
+  transition: all 300ms ease;
+}
+
+.nav-link-list:hover a:hover {
+  color: #000;
+  box-shadow: 0 2px 0 0 currentColor;
+}
+
+.hero-home {
+  @apply flex h-[550px] mx-2 p-4 items-center;
+  /*background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);*/
+  border-radius: 12px;
+}
+
+.animated-background {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-size: 200% 200%;
+  animation: moveBackground 10s ease infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+    /* Posición inicial del gradiente */
+  }
+
+  50% {
+    background-position: 100% 100%;
+    /* Mueve el gradiente hacia el final */
+  }
+
+  100% {
+    background-position: 0% 0%;
+    /* Vuelve a la posición inicial */
+  }
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  grid-template-areas: 
+    "pediatria vacunacion"
+    "infectologia vacunacion"
+    "infectologia beneficios";
+  margin-top: 20px;
+}
+
+.services-container-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.medic {
+  grid-area: pediatria;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.vaccine {
+  grid-area: vacunacion;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.infection {
+  grid-area: infectologia;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.benefits {
+  grid-area: beneficios;
+  background-color: #e6e6fa;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
