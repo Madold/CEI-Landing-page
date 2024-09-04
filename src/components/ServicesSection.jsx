@@ -1,11 +1,15 @@
 import React from 'react'
+import DoctorImage from "../assets/doctor.png"
 
 export const ServicesSection = () => {
     return (
-        <div className='wrapper-transparent services-container h-[970px]'>
-            <section className="services-container-item medic animate__animated animate__fadeInUp">
+        <div className='wrapper-transparent services-container h-[870px]'>
+            <section className="services-container-item medic flex flex-col justify-between animate__animated animate__fadeInUp">
+                <div>
                 <h3 className='text-center font-bold text-2xl'>Pediatria</h3>
                 <p>Cuidado integral y especializado para la salud de los más pequeños, enfocado en la prevención y tratamiento de enfermedades infecciosas.</p>
+                </div>
+                <img src={DoctorImage} height={150} className='doctor_image' />
             </section>
             <section className="services-container-item vaccine animate__animated animate__fadeInUp">
                 <h3 className='text-center font-bold text-2xl'>Vacunacion</h3>

@@ -168,7 +168,7 @@ button:focus-visible {
 
 .services-container-item {
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -177,7 +177,6 @@ button:focus-visible {
   grid-area: pediatria;
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
 }
 
 .vaccine {
@@ -200,4 +199,9 @@ button:focus-visible {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+}
+
+.doctor_image {
+  display: block;
+  align-self: end;
 }
