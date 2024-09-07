@@ -2,6 +2,8 @@ import React from 'react'
 import { NavBar } from './components/NavBar'
 import { HeroHome } from './components/HeroHome'
 import { ServicesSection } from './components/ServicesSection'
+import { AboutSection } from './components/AboutSection'
+import { ContactSection } from './components/ContactSection'
 
 export const App = () => {
   return (
@@ -11,6 +13,8 @@ export const App = () => {
         <HeroHome />
       </div>
       <ServicesSection />
+      <AboutSection  />
+      <ContactSection />
     </>
   )
 }

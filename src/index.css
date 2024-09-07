@@ -43,7 +43,6 @@ body {
   padding: 0;
   padding-top: 16px;
   padding-bottom: 16px;
-  min-height: 100vh;
   width: 100%;
   background-color: #E7E7E7;
 }
@@ -205,3 +204,16 @@ button:focus-visible {
   display: block;
   align-self: end;
 }
+
+.about-section {
+  background-color: #0CA5C7;
+}
+
+.about-title {
+  @apply text-2xl font-bold;
+}
+
+.principles-list {
+  list-style-image: url("./assets/icons/check_icon.svg");
+}
+

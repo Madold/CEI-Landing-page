@@ -1,11 +1,12 @@
 import React from 'react'
 import DoctorImage from "../assets/doctor.png"
-import NeedleImage from "../assets/needle.png"
+import NeedleImage from "../assets/needle.png"  
 import { Chip } from './Chip'
+import { Button } from '@mantine/core'
 
 export const ServicesSection = () => {
     return (
-        <div className='wrapper-transparent services-container h-[870px]'>
+        <div className='wrapper-transparent services-container h-[870px] pb-5'>
             <section className="services-container-item medic flex flex-col justify-between animate__animated animate__fadeInUp">
                 <div>
                     <h3 className='text-center font-bold text-2xl'>Pediatria</h3>
@@ -38,8 +39,14 @@ export const ServicesSection = () => {
                 <h3 className='text-center font-bold text-2xl'>Infectología</h3>
                 <p>Diagnóstico y tratamiento especializado para enfermedades infecciosas y trastornos inmunológicos, con un enfoque en la excelencia y la empatía.</p>
             </section>
-            <section className="services-container-item benefits animated-background flex flex-col items-center justify-center">
+            <section className="services-container-item benefits animated-background flex flex-col items-center justify-center gap-6">
                 <h3 className='text-center font-bold text-2xl'>¡Obten todos los beneficios ahora!</h3>
+                <Button
+                    color='#0CA5C7'
+                    radius={100}
+                >
+                    Agendar cita ahora
+                </Button>
             </section>
         </div>
     )
