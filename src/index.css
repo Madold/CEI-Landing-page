@@ -93,7 +93,7 @@ button:focus-visible {
 .wrapper {
   margin: 0 auto;
   background-color: #fff;
-  width: 100%;
+  width: 95%;
   max-width: 1024px;
   border-radius: 20px;
   padding-bottom: 8px;
@@ -101,7 +101,7 @@ button:focus-visible {
 
 .wrapper-transparent {
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   max-width: 1024px;
   border-radius: 20px;
 }
