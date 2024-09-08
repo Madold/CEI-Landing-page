@@ -4,7 +4,7 @@ import WhatsAppIcon from "../assets/icons/whatsapp_icon.svg"
 export const FloatingWhatsappIcon = () => {
 
     const handleClick = () => { 
-        const phoneNumber = '3177842594'; // Reemplaza con el número de WhatsApp deseado
+        const phoneNumber = '+573177842594'; // Reemplaza con el número de WhatsApp deseado
         const message = 'Hola, me gustaría agendar una cita'; // Mensaje predeterminado (opcional)
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
