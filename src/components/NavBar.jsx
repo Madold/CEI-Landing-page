@@ -8,7 +8,7 @@ export const NavBar = () => {
 
 
     return (
-        <div className="hidden md:flex justify-between items-center px-4 h-16 z-50">
+        <div className="flex justify-between items-center px-4 h-16 z-50">
             <img src={Logo} alt="logo" width={72} />
 
             <div className="nav-link-list"> 

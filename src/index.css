@@ -119,7 +119,7 @@ button:focus-visible {
 }
 
 .nav-link-list {
-  @apply flex gap-3 h-full items-center;
+  @apply flex flex-col gap-3 h-full items-center justify-center;
 }
 
 .nav-link-list:hover a {
