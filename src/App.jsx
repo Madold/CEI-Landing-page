@@ -4,6 +4,7 @@ import { HeroHome } from './components/HeroHome'
 import { ServicesSection } from './components/ServicesSection'
 import { AboutSection } from './components/AboutSection'
 import { ContactSection } from './components/ContactSection'
+import { FloatingWhatsappIcon } from './components/FloatingWhatsappIcon'
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <ServicesSection />
       <AboutSection  />
       <ContactSection />
+      <FloatingWhatsappIcon />
     </>
   )
 }

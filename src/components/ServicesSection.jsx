@@ -6,7 +6,7 @@ import { Button } from '@mantine/core'
 
 export const ServicesSection = () => {
     return (
-        <div className='wrapper-transparent services-container h-[870px] pb-5'>
+        <div id='services' className='wrapper-transparent services-container h-[870px] pb-5'>
             <section className="services-container-item medic flex flex-col justify-between animate__animated animate__fadeInUp">
                 <div>
                     <h3 className='text-center font-bold text-2xl'>Pediatria</h3>

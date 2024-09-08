@@ -17,6 +17,7 @@ export const NavBar = () => {
                 <a href="#about-us" className="nav-link">Sobre nosotros</a>
             </div>
 
+            <a href="#contact">
             <Button
                 radius={100}
                 rightSection={<IconUser color='black' size={22} />}
@@ -24,6 +25,7 @@ export const NavBar = () => {
                 >
                 <span className='text-black'>Contacto</span>
             </Button>
+            </a>
         </div>
     )
 }
