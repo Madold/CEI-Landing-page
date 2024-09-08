@@ -2,7 +2,7 @@ import React from 'react'
 
 export const AboutSection = () => {
     return (
-        <section id='about-us' className='wrapper-transparent mt-[20px] about-section p-4 flex gap-9 text-white' >
+        <section id='about-us' className='wrapper-transparent mt-[20px] about-section p-4 flex flex-col md:flex-row gap-9 text-white' >
             <div className='flex flex-col flex-1 gap-4 justify-between'>
                 <div>
                     <h4 className='about-title'>Misión</h4>
@@ -21,7 +21,7 @@ export const AboutSection = () => {
             </div>
             <div className='flex flex-col flex-1'>
                 <h4 className='about-title'>Principios corporativos</h4>
-                <ul className='principles-list flex flex-col h-full justify-between'>
+                <ul className='principles-list flex flex-col h-full justify-between ml-6 md:ml-0'>
                     <li>Empatía: Conectarnos con nuestros pacientes, familias, médico y colaboradores es lo más importante para un relacionamiento coordinado y armónico</li>
                     <li>Eficiencia: Eficiencia: Brindar a nuestros pacientes el equipo humano y la logística adecuada para lograr prestar los servicios con eficacia y efectividad.</li>
                     <li>Transparencia: Transparencia: Cumplir rigurosamente con los estándares legales y normativos más exigentes para lograr la más alta confiabilidad.</li>

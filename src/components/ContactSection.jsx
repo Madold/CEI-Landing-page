@@ -6,7 +6,7 @@ export const ContactSection = () => {
     return (
         <>
             <div id='contact' className='pt-5'></div>
-            <section className='wrapper-transparent bg-white flex p-4 gap-3'>
+            <section className='wrapper-transparent bg-white flex p-4 gap-3 flex-col md:flex-row'>
                 <div className='flex-1'>
                     <h4 className='text-center font-bold text-2xl flex-1'>Contactanos</h4>
 

@@ -18,7 +18,7 @@ export const ServicesSection = () => {
                 <h3 className='text-center w-full font-bold text-2xl'>Vacunacion</h3>
                 <p className='text-center'>Protege a tu familia con nuestro servicio de vacunación, siguiendo los más altos estándares de seguridad y eficacia.</p>
 
-                <img src={NeedleImage} className='absolute bottom-0 left-0 h-4/5' />
+                <img src={NeedleImage} className='absolute bottom-0 hidden md:block left-0 h-4/5' />
 
                 <div className='flex flex-col gap-14 h-full justify-center'>
                     <Chip>

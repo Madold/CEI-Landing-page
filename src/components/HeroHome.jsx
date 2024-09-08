@@ -23,7 +23,7 @@ export const HeroHome = () => {
                 </Button>
                 </a>
             </div>
-            <img className='aanimate__animated animate__fadeInUp' src={NurseIllustration} />
+            <img className='aanimate__animated animate__fadeInUp block' src={NurseIllustration} />
         </section>
     )
 }

@@ -9,8 +9,11 @@ import { FloatingWhatsappIcon } from './components/FloatingWhatsappIcon'
 export const App = () => {
   return (
     <>
-      <div className='wrapper flex flex-col w-full'>
+      <div className='hidden nav-bar-wrapper sticky top-0 z-50'>
         <NavBar />
+      </div>
+      <div className='pt-3'></div>
+      <div className='wrapper flex flex-col w-full pt-[10px]'>
         <HeroHome />
       </div>
       <ServicesSection />
