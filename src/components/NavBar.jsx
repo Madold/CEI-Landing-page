@@ -5,8 +5,6 @@ import { Button } from '@mantine/core'
 import { IconPhoto, IconUser } from '@tabler/icons-react'
 
 export const NavBar = () => {
-
-
     return (
         <div className="flex justify-between items-center px-4 h-16 z-50">
             <img src={Logo} alt="logo" width={72} />
